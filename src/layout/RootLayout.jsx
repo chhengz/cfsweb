@@ -5,13 +5,11 @@ import Header from "../components/Header";
 const RootLayout = () => {
   return (
     <>
-      <div className="w-full bg-slate-200">
-        <div className="">
           <Header />
-        </div>
-        <div className="container mx-auto">
+      <div className="bg-slate-200">
+          <div className=" w-full h-screen container  mx-auto  ">
           <Outlet />
-        </div>
+          </div>
       </div>
     </>
   );
