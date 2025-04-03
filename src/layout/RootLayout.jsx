@@ -7,7 +7,7 @@ const RootLayout = () => {
     <>
           <Header />
       <div className="bg-slate-200">
-          <div className=" w-full h-screen container  mx-auto  ">
+          <div className=" w-full container  mx-auto  ">
           <Outlet />
           </div>
       </div>

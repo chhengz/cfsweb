@@ -1,0 +1,1 @@
+const MEMBERS_DATA = [];
