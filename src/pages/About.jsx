@@ -1,5 +1,7 @@
 import React from 'react';
 import Feature from './Feature';
+import Team from './Team';
+import Process from './Process';
 
 const About = () => {
   return (
@@ -70,6 +72,10 @@ const About = () => {
 
         {/* Feature Page */}
         <Feature />
+
+        {/* How it work */}
+        <Process />
+
     </section>
   );
 };

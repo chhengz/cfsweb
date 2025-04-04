@@ -11,7 +11,7 @@ const Feature = () => {
         </h1>
         {/* <span class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-red-500 via-orange-400 to-yellow-600 rounded-full"></span> */}
         </div>
-        <ul className="flex flex-col gap-2 text-2xl list-disc text-start dark:text-gray-600 px-6 py-4">
+        <ul className="flex flex-col gap-2 text-2xl font-medium list-disc text-start dark:text-gray-500 px-6 py-4 list-none">
           <li>🐄 Cow Tracking System (GPS)</li>
           <li>🌡️ Environmental Monitoring (Temp, Humidity, Air Quality)</li>
           <li>🥕 Automated Feeding Control</li>

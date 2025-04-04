@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import RootLayout from "./layout/RootLayout"
-import { About, Home, Contact } from "./pages"
+import { About, Home, Contact, Team } from "./pages"
 
 
 function App() {
@@ -22,6 +22,14 @@ function App() {
         {
           path: 'contact',
           element: <Contact />
+        },
+        {
+          path: 'feature',
+          element: <div>Feature</div>
+        },
+        {
+          path: 'members',
+          element: <Team />
         }
 
       ]
