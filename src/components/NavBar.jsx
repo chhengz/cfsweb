@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import { CiMenuFries } from "react-icons/ci";
@@ -13,10 +13,27 @@ const links = [
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const navRef = useRef(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <nav>
-      <div className="shadow-md w-full fixed top-0 left-0">
+    <>
+    
+      <nav ref={navRef}>
+       <div className="shadow-md w-full fixed top-0 left-0">
         <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
           <div className="font-bold text-3xl flex items-center text-gray-800">
             <span className="text-3xl text-indigo-600 mr-2 pt-1">
@@ -33,8 +50,8 @@ const NavBar = () => {
           </div>
 
           <ul
-            className={`md:flex md:items-center md:pb-0 pb-12  absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${
-              open ? "top-12 " : "-top-50"
+            className={` md:flex md:items-center md:pb-0 pb-12  absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${
+              open ? "top-12 " : "-top-60"
             }`}
           >
             {links.map((link) => (
@@ -51,8 +68,13 @@ const NavBar = () => {
             <Button>Get Started</Button>
           </ul>
         </div>
-      </div>
-    </nav>
+      </div> 
+      
+      </nav>
+      
+    
+
+      </>
   );
 };
 
