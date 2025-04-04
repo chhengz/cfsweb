@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section class="bg-gradient-to-b from-blue-50 via-transparent sm:pt-14 lg:pt-24 xl:pt-32">
+    <section class="bg-gradient-to-b from-blue-50 via-transparent pt-12 sm:pt-12 lg:pt-24 xl:pt-28">
       <div class="relative z-10">
         <div
             class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
