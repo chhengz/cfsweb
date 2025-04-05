@@ -32,7 +32,7 @@ const Header = () => {
     };
   }, [prevScrollPos]);
 
-  console.log(prevScrollPos);
+  // console.log(prevScrollPos);
   return (
     <>
       <header
