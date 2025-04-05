@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ListCard from "../components/customs/card/ListCard";
-import axios from "axios";
+// import axios from "axios";
+import { fetchMembers } from "../utils/api";
 
 import { MEMBER_CONTENT } from "../data/data";
 import Hero from "./Hero";
@@ -14,17 +15,47 @@ const Team = () => {
   const [members, setMembers] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // useEffect(() => {
+  //   axios
+  //     .get(API_URL)
+  //     .then((res) => {
+  //       setMembers(res.data);
+  //       setLoading(false);
+  //     })
+  //     .catch((err) => {
+  //       console.error("Failed to fetch members:", err);
+  //       setLoading(false);
+  //     });
+  // }, []);
+
+  // useEffect(() => {
+  //   const fetchMembers = async () => {
+  //     try {
+  //       const res = await axios.get(API_URL);
+  //       setMembers(res.data);
+  //     } catch (err) {
+  //       console.error("Failed to fetch members:", err);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchMembers();
+  // }, []);
+
   useEffect(() => {
-    axios
-      .get(API_URL)
-      .then((res) => {
-        setMembers(res.data);
-        setLoading(false);
-      })
-      .catch((err) => {
+    const getMembers = async () => {
+      try {
+        const data = await fetchMembers();
+        setMembers(data);
+      } catch (err) {
         console.error("Failed to fetch members:", err);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+  
+    getMembers();
   }, []);
 
   return (
@@ -46,8 +77,20 @@ const Team = () => {
               magnam neque, exercitationem eius sunt!
             </p>
             <div className="flex flex-row flex-wrap-reverse justify-center">
-              {loading ? (
+              {/* {loading ? (
                 <h1 className="text-2xl font-light">Loading...</h1>
+              ) : (
+                members.map((member, index) => (
+                  <ListCard
+                    key={index}
+                    img={member.image || IMG_URL}
+                    name={member.name}
+                    role={member.role}
+                  />
+                ))
+              )} */}
+              {!loading && members.length === 0 ? (
+                <p className="text-lg text-red-500">No members found.</p>
               ) : (
                 members.map((member, index) => (
                   <ListCard

@@ -1,9 +1,19 @@
 // (https://jsonplaceholder.typicode.com/posts)
 
+export const HOME_CONTENT = {
+  title: "Transforming Traditional Farming with",
+  title_span: "Smart IoT Technology",
+  description:
+    "Monitor cow health, automate feeding, and ensure farm safety — all from your phone!",
+  imgUrl:
+    "https://thumbs.dreamstime.com/b/high-tech-cow-farm-managed-artificial-intelligence-dashboard-phrase-ai-cows-high-tech-cow-farm-managed-301843265.jpg",
+};
+
 export const CONTACT = {
   title: "Let's Talk",
-  description: "Feature request? Suggestion? or maybe you'd like to be our critic! Here's a form just for that.",
-}
+  description:
+    "Feature request? Suggestion? or maybe you'd like to be our critic! Here's a form just for that.",
+};
 
 export const HERO_CONTENT = {
   title: "Transforming Traditional Farming with Smart IoT Technology",
@@ -45,9 +55,9 @@ export const ABOUT_CONTENT = {
 };
 
 export const MEMBER_CONTENT = {
-    title: "Meet Our Team",
-    description: ""
-}
+  title: "Meet Our Team",
+  description: "",
+};
 
 export const FEATURE_CONTENT = {
   title: "Features of Our Smart Farm",

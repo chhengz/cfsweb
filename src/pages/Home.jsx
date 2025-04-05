@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const IMG_URL =
-  "https://thumbs.dreamstime.com/b/high-tech-cow-farm-managed-artificial-intelligence-dashboard-phrase-ai-cows-high-tech-cow-farm-managed-301843265.jpg";
-
 import Hero from "./Hero";
+import ScrollToTopButton from "../components/customs/ScrollToTopButton";
+
+import { HOME_CONTENT } from '../data/data'
 
 const Home = () => {
   return (
+    <>
+      {/* ScrollToTop Button */}
+      <ScrollToTopButton />
+      {/* Background gradient */}
       <section class="relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 sm:pb-16 sm:pt-14 lg:pb-24 xl:pb-28 xl:pt-30">
         {/* Hero section */}
         <Hero />
@@ -15,12 +19,10 @@ const Home = () => {
         <div class="relative z-20 mx-auto max-w-7xl px-6 lg:px-8">
           <div class="pt-28 sm:pt-30 mx-auto max-w-2xl text-center ">
             <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Transforming Traditional Farming with
-              <span class="text-blue-600"> Smart IoT Technology</span>
+              {HOME_CONTENT.title}{" "}<span class="text-blue-600">{HOME_CONTENT.title_span}</span>
             </h1>
             <h2 class="mt-6 text-lg leading-8 text-gray-600">
-              Monitor cow health, automate feeding, and ensure farm safety — all
-              from your phone!
+              {HOME_CONTENT.description}
             </h2>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -46,12 +48,13 @@ const Home = () => {
           <div class="relative mx-auto mt-10 max-w-lg">
             <img
               class="w-full rounded-2xl border border-gray-100 shadow"
-              src={IMG_URL}
+              src={HOME_CONTENT.imgUrl}
               alt=""
             />
           </div>
         </div>
       </section>
+    </>
   );
 };
 
