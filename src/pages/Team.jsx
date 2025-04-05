@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import ListCard from "../components/ListCard";
 import axios from "axios";
 
-import {MEMBER_CONTENT} from '../data/data'
+import { MEMBER_CONTENT } from "../data/data";
 
 // sample API URL
 const API_URL = import.meta.env.VITE_API_URL;
-const IMG_URL = 'https://i.pinimg.com/736x/0f/b9/f0/0fb9f0d29a9b43866cf7c2cc12b3fd3f.jpg';
-
+const IMG_URL =
+  "https://i.pinimg.com/736x/0f/b9/f0/0fb9f0d29a9b43866cf7c2cc12b3fd3f.jpg";
 
 const Team = () => {
   // Fetch data from API
