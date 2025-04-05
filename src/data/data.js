@@ -1,5 +1,10 @@
 // (https://jsonplaceholder.typicode.com/posts)
 
+export const CONTACT = {
+  title: "Let's Talk",
+  description: "Feature request? Suggestion? or maybe you'd like to be our critic! Here's a form just for that.",
+}
+
 export const HERO_CONTENT = {
   title: "Transforming Traditional Farming with Smart IoT Technology",
   subtitle:

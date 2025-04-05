@@ -1,17 +1,15 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header";
-import ScrollToTop from "../components/ScrollToTop";
+import Header from "../Header";
+import ScrollToTop from "../ScrollToTop";
 
 const RootLayout = () => {
   return (
     <>
-    <ScrollToTop />
+      <ScrollToTop />
       <Header />
-      <div className="bg-white ">
-        <div className=" w-full  ">
+      <div className="w-full bg-white ">
           <Outlet />
-        </div>
       </div>
     </>
   );

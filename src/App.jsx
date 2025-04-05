@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import RootLayout from "./layout/RootLayout"
-import { About, Home, Contact, Team } from "./pages"
+import RootLayout from "./components/layout/RootLayout"
+import { About, Home, Contact, Team, Error404 } from "./pages"
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     {
       path: '/',
       element: <RootLayout />,
-      errorElement: <div>Error</div>,
+      errorElement: <Error404 />,
       children: [
         {
           index: true,
