@@ -43,7 +43,7 @@ const Hero = () => {
     </div>
 </div> */}
 <section
-    class="relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 pt-28 sm:pb-16 sm:pt-14 lg:pb-24 xl:pb-28 xl:pt-30">
+    class="relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 sm:pb-16 sm:pt-14 lg:pb-24 xl:pb-28 xl:pt-30">
     <div class="relative z-10">
         <div
             class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
     </div>
     <div class="relative z-20 mx-auto max-w-7xl px-6 lg:px-8">
-        <div class=" sm:pt-30 mx-auto max-w-2xl text-center ">
+        <div class="pt-28 sm:pt-30 mx-auto max-w-2xl text-center ">
             <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Transforming Traditional Farming with
                 <span class="text-blue-600"> Smart IoT Technology

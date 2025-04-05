@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import ListCard from "../components/ListCard";
 import axios from "axios";
 
+import {MEMBER_CONTENT} from '../data/data'
+
 // sample API URL
 const API_URL = import.meta.env.VITE_API_URL;
-
+const IMG_URL = 'https://i.pinimg.com/736x/0f/b9/f0/0fb9f0d29a9b43866cf7c2cc12b3fd3f.jpg';
 
 
 const Team = () => {
@@ -26,7 +28,7 @@ const Team = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 pt-10 sm:pb-16 sm:pt-22 lg:pb-24 xl:pb-32 xl:pt-20">
+    <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 sm:pb-16 sm:pt-14 lg:pb-24 xl:pb-28 xl:pt-30">
       <div className="relative z-10">
         <div className="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
           <svg
@@ -61,11 +63,11 @@ const Team = () => {
           </svg>
         </div>
       </div>
-      <div className="w-full pt-15 flex flex-col justify-center items-center">
+      <div className="relative z-20 w-full pt-15 flex flex-col justify-center items-center">
         <section className="py-6 ">
           <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
-            <h1 className="text-4xl font-bold leading-none text-center sm:text-5xl">
-              Our team
+            <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 leading-none text-center sm:text-5xl">
+              {MEMBER_CONTENT.title}
             </h1>
             <p className="max-w-2xl text-center dark:text-gray-600">
               At a assumenda quas cum earum ut itaque commodi saepe rem
@@ -79,7 +81,7 @@ const Team = () => {
                 members.map((member, index) => (
                   <ListCard
                     key={index}
-                    img={member.img}
+                    img={member.image || IMG_URL}
                     name={member.name}
                     role={member.role}
                   />
