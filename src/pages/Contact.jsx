@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Hero from "./Hero";
 import {CONTACT} from '../data/data'
 
 const Contact = () => {
@@ -27,12 +26,8 @@ const Contact = () => {
   };
 
   return (
-    <section class="relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 sm:pb-16 sm:pt-14 lg:pb-24 xl:pb-28 xl:pt-30">
-      {/* Hero Section */}
-      <Hero />
-
+    <section class="relative overflow-hidden pb-12 sm:pb-16 sm:pt-14 lg:pb-24 xl:pb-28 xl:pt-30">
       {/* Contact Section */}
-
       <div className="relative z-20 w-full pt-15 flex flex-col justify-center items-center">
         <section className="py-6 ">
           <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">

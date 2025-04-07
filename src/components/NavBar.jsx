@@ -7,7 +7,7 @@ import { IoTerminal } from "react-icons/io5";
 const links = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
-  { path: "/members", label: "Members" },
+  { path: "/team", label: "Team" },
   { path: "/contact", label: "Contact" },
 ];
 
@@ -44,7 +44,7 @@ const NavBar = () => {
             onClick={() => setOpen(false)}
             className="block w-fit text-indigo-600 transition duration-500 ease-in-out "
           >
-            <div className="font-bold text-3xl flex items-center text-gray-800 hover:text-blue-600">
+            <div className="font-bold text-3xl flex items-center text-gray-600 hover:text-blue-600">
               <span className="text-3xl  mr-1 pt-0.5">
                 <IoTerminal />
               </span>
@@ -62,7 +62,7 @@ const NavBar = () => {
           </div>
 
           <ul
-            className={`md:flex md:items-center md:pb-0 pb-4 absolute md:static bg-white  md:z-auto -z-1 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${
+            className={`md:flex md:items-center shadow-lg md:shadow-[0] md:pb-0 pb-4 absolute md:static bg-white  md:z-auto -z-1 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${
               open ? "top-16" : "-top-75"
             }`}
           >
@@ -71,7 +71,7 @@ const NavBar = () => {
                 <NavLink
                   onClick={() => setOpen(false)}
                   to={link.path}
-                  className="text-gray-800 hover:text-gray-400 duration-500"
+                  className="text-gray-600 hover:text-gray-400 hover:underline duration-500"
                 >
                   {link.label}
                 </NavLink>

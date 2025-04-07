@@ -1,6 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import RootLayout from "./components/layout/RootLayout"
+
+// Page
 import { About, Home, Contact, Team, Error404 } from "./pages"
+
+// Layout
+import RootLayout from "./components/layout/RootLayout"
+import AboutLayout from "./components/layout/AboutLayout"
 
 
 function App() {
@@ -17,7 +22,7 @@ function App() {
         },
         {
           path: 'about',
-          element: <About />
+          element: <AboutLayout />
         },
         {
           path: 'contact',
@@ -28,7 +33,7 @@ function App() {
           element: <div>Feature</div>
         },
         {
-          path: 'members',
+          path: 'team',
           element: <Team />
         }
       ]

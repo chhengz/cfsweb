@@ -1,4 +1,3 @@
-// (https://jsonplaceholder.typicode.com/posts)
 
 export const HOME_CONTENT = {
   title: "Transforming Traditional Farming with",

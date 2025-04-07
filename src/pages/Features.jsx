@@ -1,7 +1,7 @@
 import React from "react";
 import { FEATURE_CONTENT } from "../data/data";
 
-const Feature = () => {
+const Features = () => {
   return (
     <section className="py-6">
       <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
@@ -10,7 +10,7 @@ const Feature = () => {
             {FEATURE_CONTENT.title}
           </h1>
         </div>
-        <ul className="flex flex-col gap-2 text-2xl font-medium text-start dark:text-gray-600 px-6 py-4 list-none">
+        <ul className="flex flex-col gap-2 text-xl font-medium text-start text-gray-600 dark:text-gray-600 px-6 py-4 list-none">
           {FEATURE_CONTENT.features.map((feature, index) => (
             <li key={index} className="flex items-start justify-start">
               <span className="w-10 h-10 flex items-center justify-center -mt-1 p-4 mr-1">
@@ -25,4 +25,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default Features;
