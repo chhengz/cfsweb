@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { CiMenuFries } from "react-icons/ci";
-import { IoIosClose } from "react-icons/io";
-import { IoTerminal } from "react-icons/io5";
+import { IoTerminal, IoClose, IoMenu } from "react-icons/io5";
 
 const links = [
   { path: "/", label: "Home" },
@@ -39,6 +37,7 @@ const NavBar = () => {
     <nav ref={navRef} >
       <div className="shadow-md w-full">
         <div className="md:flex items-center justify-between bg-white  py-4 md:px-10 px-7">
+          <div className="flex items-center justify-between">
           <Link
             to={"/"}
             onClick={() => setOpen(false)}
@@ -54,11 +53,12 @@ const NavBar = () => {
 
           <div
             onClick={() => setOpen(!open)}
-            className="text-4xl absolute right-8 top-6 cursor-pointer md:hidden"
+            className="w-10 h-10 flex items-center justify-center text-4xl  text-gray-600 cursor-pointer md:hidden"
             aria-label="Toggle navigation menu"
             aria-expanded={open ? "true" : "false"}
           >
-            {open ? <IoIosClose /> : <CiMenuFries />}
+            {open ? <IoClose className="w-10 h-10" /> : <IoMenu className="w-10 h-10" />}
+          </div>
           </div>
 
           <ul
