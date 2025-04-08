@@ -5,8 +5,9 @@ const BANNER_URL =
   "https://th.bing.com/th/id/R.31a0c3c3549596171bff665b8c6841de?rik=QuUz0ypFkDnhcQ&riu=http%3a%2f%2fwww.rupp.edu.kh%2fimg%2fslideshow01.jpg&ehk=vN%2bhRvD8a5%2f8B%2b3U5LMnOK0v8tKMDZzUg6iO5mnBJO0%3d&risl=&pid=ImgRaw&r=0";
 
 const BANNER_ALT = "Royal University of Phnom Penh";
-const BANNER_TITLE = "University of Science and Engineering";
 const BANNER_TITLE_KH = "សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ";
+const BANNER_TITLE = "Faculty of Science";
+const DEPARTMENT_TITLE = "Department of Computer Science";
 
 const University = () => {
   return (
@@ -43,8 +44,9 @@ const University = () => {
           />
 
           <div className=" absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
             <h2 className="text-white text-4xl font-bold">{BANNER_TITLE}</h2>
+            <h3 className="text-white text-2xl font-bold">{DEPARTMENT_TITLE}</h3>
           </div>
         </div>
       </div>

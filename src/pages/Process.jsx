@@ -1,10 +1,8 @@
 import React from "react";
 import { FaAngleDown } from "react-icons/fa6";
-import useFetchData from "../hooks/useFetchData";
-import Loading from "../components/customs/Loading";
+import Loading from "../components/customs/loading/Loading";
 
-const Process = () => {
-  const { data, loading } = useFetchData();
+const Process = ({ data, loading }) => {
   return (
     <div className="">
       <section className="py-6 max-w-xl mx-auto">

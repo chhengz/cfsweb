@@ -1,9 +1,7 @@
 import React from "react";
-import useFetchData from "../hooks/useFetchData";
-import Loading from "../components/customs/Loading";
+import Loading from "../components/customs/loading/Loading";
 
-const Features = () => {
-  const { data, loading } = useFetchData();
+const Features = ({ data, loading }) => {
   return (
     <section className="py-6">
       {loading ? (

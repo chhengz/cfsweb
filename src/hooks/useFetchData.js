@@ -1,4 +1,3 @@
-// src/hooks/useFetchData.js
 import { useEffect, useState } from "react";
 import { fetchData } from "../utils/api";
 

@@ -1,12 +1,6 @@
-import React, { useEffect, useState } from "react";
+import Loading from "../components/customs/loading/Loading";
 
-// function fetch data from api
-import Loading from "../components/customs/Loading";
-import useFetchData from "../hooks/useFetchData";
-
-const About = () => {
-  const { data, loading } = useFetchData();
-
+const About = ({data, loading}) => {
   return (
     <>
       {/* About Section */}
@@ -18,7 +12,11 @@ const About = () => {
               <Loading />
             ) : (
               <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
-                <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 leading-none text-center sm:text-5xl">
+                {/**
+                 *  not ready for this color from-blue-400 to-indigo-500
+                 * 
+                 * */}
+                <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500 leading-none text-center sm:text-5xl">
                   {data?.ABOUT_CONTENT?.title}
                 </h1>
                 <p className="p-4 text-2xl max-w-2xl text-center font-medium text-gray-500 dark:text-gray-600">
@@ -30,9 +28,9 @@ const About = () => {
         </div>
 
         {/* Importance section */}
-        <div className="flex flex-col lg:flex-row justify-center px-10">
+        <section className="flex flex-col lg:flex-row justify-center px-10">
           {data?.ABOUT_CONTENT?.list.map((list, index) => (
-            <section key={index} className="py-6">
+            <div key={index} className="py-6">
               <div className="container flex flex-col p-4 mx-auto space-y-8 sm:p-10">
                 <h2 className="text-3xl font-bold text-center sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-red-400 to-orange-500 leading-none">
                   {list.title}
@@ -49,9 +47,9 @@ const About = () => {
                   ))}
                 </ul>
               </div>
-            </section>
+            </div>
           ))}
-        </div>
+        </section>
       </div>
     </>
   );

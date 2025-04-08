@@ -1,20 +1,4 @@
 {
-  "HOME_CONTENT": {
-    "title": "Transforming Traditional Farming with",
-    "title_span": "Smart IoT Technology",
-    "description": "Monitor cow health, automate feeding, and ensure farm safety — all from your phone!",
-    "imgUrl": "https://thumbs.dreamstime.com/b/high-tech-cow-farm-managed-artificial-intelligence-dashboard-phrase-ai-cows-high-tech-cow-farm-managed-301843265.jpg"
-  },
-  "CONTACT": {
-    "title": "Let's Talk",
-    "description": "Feature request? Suggestion? or maybe you'd like to be our critic! Here's a form just for that."
-  },
-  "HERO_CONTENT": {
-    "title": "Transforming Traditional Farming with Smart IoT Technology",
-    "subtitle": "Monitor cow health, automate feeding, and ensure farm safety — all from your phone!",
-    "buttonText": "See More",
-    "imgUrl": "https://images.unsplash.com/photo-1574158622687-5d2e0f9a4c3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZpbGxlJTIwY29udHJvbHxlbnwwfHx8fDE2OTQxMzM0MjE&ixlib=rb-4.0.3&q=80&w=1080"
-  },
   "ABOUT_CONTENT": {
     "title": "About the Project",
     "description": "This project focuses on building a smart cow farming system using IoT technologies like GPS-enabled collars, environmental sensors, automated feeding systems, and a mobile app for real-time monitoring.",
@@ -43,24 +27,41 @@
       }
     ]
   },
-  "MEMBER_CONTENT": {
-    "title": "Meet Our Team",
-    "description": ""
-  },
   "FEATURE_CONTENT": {
     "title": "Features of Our Smart Farm",
     "features": [
-      { "icon": "🐄", "text": "Cow Tracking System (GPS)" },
+      {
+        "icon": "🐄",
+        "text": "Cow Tracking System (GPS)"
+      },
       {
         "icon": "🌡️",
         "text": "Environmental Monitoring (Temp, Humidity, Air Quality)"
       },
-      { "icon": "🥕", "text": "Automated Feeding Control" },
-      { "icon": "📶", "text": "WiFi / LoRa / GSM Connectivity" },
-      { "icon": "☁️", "text": "Cloud-Based Data Logging" },
-      { "icon": "🔔", "text": "Real-Time Alerts & Notifications" },
-      { "icon": "🔋", "text": "Solar-Powered Operation" },
-      { "icon": "📊", "text": "Mobile & Web Dashboard" }
+      {
+        "icon": "🥕",
+        "text": "Automated Feeding Control"
+      },
+      {
+        "icon": "📶",
+        "text": "WiFi / LoRa / GSM Connectivity"
+      },
+      {
+        "icon": "☁️",
+        "text": "Cloud-Based Data Logging"
+      },
+      {
+        "icon": "🔔",
+        "text": "Real-Time Alerts & Notifications"
+      },
+      {
+        "icon": "🔋",
+        "text": "Solar-Powered Operation"
+      },
+      {
+        "icon": "📊",
+        "text": "Mobile & Web Dashboard"
+      }
     ]
   },
   "PROCESS_CONTENT": {
@@ -93,51 +94,51 @@
       }
     ]
   },
-  "MEMBERS": [
+  "GROUP_MEMBERS": [
     {
       "img": "https://example.com/image1.jpg",
       "name": "ធឿង ប៉ាន់ណូ",
-      "role": "Designer"
+      "role": "Member"
     },
     {
       "img": "https://example.com/image1.jpg",
       "name": "យី សៀវវ័យ",
-      "role": "Project Manager"
-    },
-    {
-      "img": "https://example.com/image1.jpg",
-      "name": "មី អនុរាជ",
-      "role": "QA Engineer"
-    },
-    {
-      "img": "https://example.com/image1.jpg",
-      "name": "ម៉ៅ សុខចំរើន",
-      "role": "QA Engineer"
-    },
-    {
-      "img": "https://example.com/image1.jpg",
-      "name": "មឿន មករា",
-      "role": "QA Engineer"
-    },
-    {
-      "img": "https://example.com/image1.jpg",
-      "name": "យាប ចាន់យ៉ា",
-      "role": "QA Engineer"
-    },
-    {
-      "img": "https://example.com/image1.jpg",
-      "name": "ផាន ដាវីត",
-      "role": "QA Engineer"
-    },
-    {
-      "img": "https://example.com/image1.jpg",
-      "name": "ស៊ុ សូនីតា",
-      "role": "QA Engineer"
+      "role": "Member"
     },
     {
       "img": "https://example.com/group_member.png",
       "name": "វ៉ាង សុខឆេង",
-      "role": "Web Developer"
+      "role": "Member"
+    },
+    {
+      "img": "https://example.com/image1.jpg",
+      "name": "មី អនុរាជ",
+      "role": "Member"
+    },
+    {
+      "img": "https://example.com/image1.jpg",
+      "name": "ម៉ៅ សុខចំរើន",
+      "role": "Member"
+    },
+    {
+      "img": "https://example.com/image1.jpg",
+      "name": "មឿន មករា",
+      "role": "Member"
+    },
+    {
+      "img": "https://example.com/image1.jpg",
+      "name": "យាប ចាន់យ៉ា",
+      "role": "Member"
+    },
+    {
+      "img": "https://example.com/image1.jpg",
+      "name": "ផាន ដាវីត",
+      "role": "Member"
+    },
+    {
+      "img": "https://example.com/image1.jpg",
+      "name": "ស៊ុ សូនីតា",
+      "role": "Member"
     },
     {
       "img": "https://example.com/image1.jpg",

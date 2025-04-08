@@ -1,18 +1,22 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Header from "../Header";
-import ScrollToTop from "../customs/ScrollToTop";
-import ReadingProgress from "../customs/ReadingProgress";
-import { Hero } from "../../pages";
+
+// Components
+import Header from "../customs/header/Header";
+import ScrollToTop from "../customs/scroll/ScrollToTop";
 // import ScrollToTopButton from "../customs/ScrollToTopButton";
+import ReadingProgress from "../customs/progressbar/ReadingProgress";
+
+// Pages
+import { Hero } from "../../pages";
 
 const RootLayout = () => {
   return (
     <>
       <div>
         <ScrollToTop /> 
-        {/* <ScrollToTopButton /> */}
         <ReadingProgress />
+        {/* <ScrollToTopButton /> */}
         <Header />
         <div className="w-full">
           {/* Hero section */}
