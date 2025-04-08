@@ -5,9 +5,9 @@ const VIDEO_TITLE = "IoT Project Demo";
 
 const Demo = () => {
   return (
-    <div>
+    <div className='mx-auto max-w-2xl text-center '>
       <div className="max-w-3xl w-full  rounded-2xl px-8 text-center">
-        <h1 className="text-3xl font-bold mb-4 text-indigo-600">Smart IoT Monitoring System</h1>
+        <h1 className="text-4xl font-bold mb-4 text-blue-600">Smart IoT Monitoring System</h1>
         <p className="text-gray-700 mb-6">
           This project demonstrates a real-time IoT solution that monitors environmental data using sensors and displays analytics through a connected dashboard.
         </p>

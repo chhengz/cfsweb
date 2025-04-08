@@ -9,6 +9,7 @@ import ScrollToTopButton from "../components/customs/ScrollToTopButton";
 import Hero from "./Hero";
 import Demo from "./Demo";
 import Loading from "../components/customs/Loading";
+import University from "./University";
 
 const Home = () => {
   const { data, loading } = useFetchData();
@@ -85,14 +86,20 @@ const Home = () => {
             )}
           </div>
         </section>
+
+        {/* Demo video section */}
         <section
           ref={demoRef}
           className="mt-12 lg:mt-6 pb-12 sm:pb-16  lg:pb-24 xl:pb-28"
         >
-          <div class="mx-auto max-w-2xl text-center ">
-            <Demo />
-          </div>
+          <Demo />
         </section>
+
+        {/* University section */}
+        <section className="mt-12 lg:mt-6 pb-12 sm:pb-16  lg:pb-24 xl:pb-28">
+          <University />
+        </section>
+
       </div>
       {/* )} */}
     </>
