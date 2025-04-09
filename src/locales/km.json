@@ -1,0 +1,63 @@
+{
+    "_Comment Navbar": "Navbar",
+    "Home": "ទំព័រដើម",
+    "About": "អំពីការងារ",
+    "Team": "ក្រុមការងារ",
+    "Contact": "ទំនាក់ទនង",
+
+    "_Comment HomePage": "HomePage",
+    "Smart Cow Farming System": "ប្រព័ន្ធចិញ្ចឹមគោឆ្លាតវៃ",
+    "Transforming Traditional Farming with": "ប្រែក្លាយកសិកម្មប្រពៃណីជាមួយ",
+    "Smart IoT Technology": "បច្ចេកវិទ្យា Smart IoT",
+    "home_description": "តាមដានសុខភាពគោ ការផ្តល់ចំណីដោយស្វ័យប្រវត្តិ និងធានាសុវត្ថិភាពកសិដ្ឋាន — ទាំងអស់ពីទូរសព្ទរបស់អ្នក!",
+    "SeeMore": "មើលច្រើនទៀត",
+    
+    "_Comment Demo": "Demo",
+    "demo_title": "Smart IoT Monitoring System",
+    "demo_description": "This project demonstrates a real-time IoT solution that monitors environmental data using sensors and displays analytics through a connected dashboard.",
+    "demo_technologies": "Built with ❤️ using ESP32, Node.js, and Firebase.",
+    
+    "_Comment University": "University",
+    "uniersity_name_km": "សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ",
+    "uniersity_name_en": "Royal University of Phnom Penh",
+    "faculty_name": "Faculty of Science",
+    "department_name": "Department of Computer Science",
+    
+    "_Comment About": "About",
+    "AboutUs": "About Us",
+    "About the Project": "អំពីគម្រោង",
+    "This project focuses on building a smart cow farming system using IoT technologies like GPS-enabled collars, environmental sensors, automated feeding systems, and a mobile app for real-time monitoring.": "គម្រោងនេះផ្តោតលើការកសាងប្រព័ន្ធចិញ្ចឹមគោឆ្លាតវៃដោយប្រើបច្ចេកវិទ្យា IoT ដូចជាកអាវដែលប្រើ GPS ឧបករណ៍ចាប់សញ្ញាបរិស្ថាន ប្រព័ន្ធផ្តល់ចំណីដោយស្វ័យប្រវត្តិ និងកម្មវិធីទូរស័ព្ទសម្រាប់ការត្រួតពិនិត្យពេលវេលាជាក់ស្តែង។",
+    "Why It Matters": "ហេតុអ្វីបានជាវាសំខាន់",
+    "Increases productivity": "បង្កើនផលិតភាព",
+    "Enhances animal welfare": "លើកកម្ពស់សុខុមាលភាពសត្វ",
+    "Saves time and labor": "ចំណេញពេលវេលា និងកម្លាំងពលកម្ម",
+    "Promotes sustainable farming": "ជំរុញ​ការ​ធ្វើ​កសិកម្ម​ប្រកប​ដោយ​និរន្តរភាព",
+    "Key Technologies": "បច្ចេកវិទ្យាសំខាន់ៗ",
+    
+    "_Comment Process": "Process",
+    "How It Works": "របៀបដែលវាដំណើរការ",
+    "Data Collection": "ការប្រមូលទិន្នន័យ",
+    "Data Transmission": "ការផ្ទេរទិន្នន័យ",
+    "Cloud Integration": "ការរួមបញ្ចូល Cloud",
+    "User Interface": "ផ្ទាំងអ្នកប្រើ",
+    "Automation": "ការផ្តល់ចំណីដោយស្វ័យប្រវត្តិ",
+
+    "_Comment Features": "Features",
+    "Features of Our Smart Farm": "លក្ខណៈពិសេសរបស់ Smart Farm របស់យើង",
+    "Cow Tracking System (GPS)": "ប្រព័ន្ធតាមដានគោ (GPS)",
+    "Environmental Monitoring (Temp, Humidity, Air Quality)": "ការត្រួតពិនិត្យបរិស្ថាន (សីតុណ្ហភាព សំណើម គុណភាពខ្យល់)",
+    "Automated Feeding Control": "ការគ្រប់គ្រងចំណីដោយស្វ័យប្រវត្តិ",
+    "WiFi / LoRa / GSM Connectivity": "ការតភ្ជាប់វ៉ាយហ្វាយ / LoRa / GSM",
+    "Cloud-Based Data Logging": "ការកត់ត្រាទិន្នន័យផ្អែកលើពពក",
+    "Real-Time Alerts & Notifications": "ការជូនដំណឹង និងការជូនដំណឹងតាមពេលវេលាជាក់ស្តែង",
+    "Solar-Powered Operation": "ប្រតិបត្តិការថាមពលពន្លឺព្រះអាទិត្យ",
+    "Mobile & Web Dashboard": "ផ្ទាំងគ្រប់គ្រងគេហទំព័រ និងចល័ត",
+    
+    "_Comment Team": "Team",
+    "Meet Our Team": "ជួបជាមួយក្រុមរបស់យើង",
+    "TeamDescription": "ជួបជាមួយបុគ្គលដែលមានទេពកោសល្យនៅពីក្រោយប្រព័ន្ធ Smart Cow Farming ។ ក្រុមការងារចម្រុះរបស់យើងនាំមកនូវអ្នកជំនាញក្នុងវិស័យកសិកម្ម បច្ចេកវិទ្យា និងការរចនារួមគ្នា ដើម្បីបង្កើតដំណោះស្រាយដ៏ទូលំទូលាយសម្រាប់កសិករសម័យទំនើប។",
+
+    "_Comment Contact": "Contact",
+    "Let's Talk": "តោះនិយាយគ្នា",
+    "ContactDescription": "សំណើលក្ខណៈពិសេស? សំណូមពរ? ឬប្រហែលជាអ្នកចង់ធ្វើជាអ្នករិះគន់របស់យើង! នេះជាទម្រង់សម្រាប់តែប៉ុណ្ណឹង។"
+}

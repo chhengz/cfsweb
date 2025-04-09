@@ -3,9 +3,10 @@ import { Outlet } from "react-router-dom";
 
 // Components
 import Header from "../customs/header/Header";
+import NavBar from "../customs/navbar/NavBar";
 import ScrollToTop from "../customs/scroll/ScrollToTop";
-// import ScrollToTopButton from "../customs/ScrollToTopButton";
 import ReadingProgress from "../customs/progressbar/ReadingProgress";
+// import ScrollToTopButton from "../customs/ScrollToTopButton";
 
 // Pages
 import { Hero } from "../../pages";
@@ -17,7 +18,9 @@ const RootLayout = () => {
         <ScrollToTop /> 
         <ReadingProgress />
         {/* <ScrollToTopButton /> */}
-        <Header />
+        {/* <Header /> */}
+        <NavBar />
+
         <div className="w-full">
           {/* Hero section */}
             <div className="w-full h-screen fixed top-0 left-0 -z-50 bg-gradient-to-b from-blue-50 via-transparent to-transparent">

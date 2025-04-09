@@ -1,0 +1,45 @@
+{
+    "_Comment Navbar": "Navbar",
+    "Home": "Home",
+    "About": "About",
+    "Team": "Team",
+    "Contact": "Contact",
+
+    "_Comment HomePage": "HomePage",
+    "SmartCowFarmingSystem": "Smart Cow Farming System",
+    "TransformingTraditionalFarming": "Transforming Traditional Farming with",
+    "SmartIoTTechnology": "Smart IoT Technology",
+    "home_description": "Monitor cow health, automate feeding, and ensure farm safety — all from your phone!",
+    "SeeMore": "See More",
+
+    "_Comment Demo": "Demo",
+    "demo_title": "Smart IoT Monitoring System",
+    "demo_description": "This project demonstrates a real-time IoT solution that monitors environmental data using sensors and displays analytics through a connected dashboard.",
+    "demo_technologies": "Built with ❤️ using ESP32, Node.js, and Firebase.",
+
+    "_Comment University": "University",
+    "uniersity_name_km": "សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ",
+    "uniersity_name_en": "Royal University of Phnom Penh",
+    "faculty_name": "Faculty of Science",
+    "department_name": "Department of Computer Science",
+    
+    "_Comment About": "About",
+    "AboutUs": "About Us",
+    "AboutProject": "About the Project",
+    "AboutUsDescription": "This project focuses on building a smart cow farming system using IoT technologies like GPS-enabled collars, environmental sensors, automated feeding systems, and a mobile app for real-time monitoring.",
+    "WhyItMatters": "Why It Matters",
+    "Increases productivity": "Increases productivity",
+    "Enhances animal welfare": "Enhances animal welfare",
+    "Saves time and labor": "Saves time and labor",
+    "Promotes sustainable farming": "Promotes sustainable farming",
+    "Key Technologies": "Key Technologies",
+
+    "_Comment Team": "Team",
+    "Meet Our Team": "Meet Our Team",
+    "TeamDescription": "Meet the talented individuals behind Smart Cow Farming System. Our diverse team brings together expertise in agriculture, technology, and design to create a comprehensive solution for modern farmers.",
+
+    "_Comment Contact": "Contact",
+    "Let's Talk": "Let's Talk",
+    "ContactDescription": "Meet the talented individuals behind Smart Cow Farming System. Our diverse team brings together expertise in agriculture, technology, and design to create a comprehensive solution for modern farmers."
+
+}

@@ -28,6 +28,7 @@ const ScrollToTopButton = () => {
       aria-label="Scroll to top"
     >
       <FaArrowUp className="w-5 h-5" />
+      <div class="w-full h-full bg-blue-300 rounded-full absolute top-0 left-0 animate-ping"></div>
     </button>
   );
 };

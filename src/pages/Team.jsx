@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import ListCard from "../components/customs/card/ListCard";
 import Loading from "../components/customs/loading/Loading";
 import useFetchData from "../hooks/useFetchData";
@@ -7,6 +8,7 @@ const IMG_URL =
   "https://tse4.mm.bing.net/th/id/OIP.zi4Xf-NhgVgITYi_UTApDAHaHa?rs=1&pid=ImgDetMain";
 
 const Team = () => {
+  const { t } = useTranslation();
   const { data, loading } = useFetchData();
 
   return (
@@ -16,12 +18,10 @@ const Team = () => {
         <section className="py-6 ">
           <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
             <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 leading-none text-center sm:text-5xl">
-              Meet Our Team
+              {t("Meet Our Team")}
             </h1>
             <p className="p-4 text-2xl max-w-2xl text-center text-gray-500 dark:text-gray-600">
-              At a assumenda quas cum earum ut itaque commodi saepe rem
-              aspernatur quam natus quis nihil quod, hic explicabo doloribus
-              magnam neque, exercitationem eius sunt!
+              {t('TeamDescription')}
             </p>
             {/* Group Members Section for display profile picture and name */}
             <div className="flex flex-row flex-wrap-reverse justify-center">

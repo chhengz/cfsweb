@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import '../i18n';
 
 // custom components
 import ScrollToTopButton from "../components/customs/scroll/ScrollToTopButton";
@@ -7,12 +8,14 @@ import ScrollToTopButton from "../components/customs/scroll/ScrollToTopButton";
 // pages
 import Demo from "./Demo";
 import University from "./University";
+import { useTranslation } from "react-i18next";
 
 // Define image by URL
 const COW_IMAGE_URL = "https://thumbs.dreamstime.com/b/high-tech-cow-farm-managed-artificial-intelligence-dashboard-phrase-ai-cows-high-tech-cow-farm-managed-301843265.jpg";
 
 
 const Home = () => {
+  const { t } = useTranslation();
   const demoRef = useRef(null);
   const scrollToPage = () => {
     demoRef.current?.scrollIntoView({
@@ -32,16 +35,16 @@ const Home = () => {
               <div>
                 <div>
                   <h1 className="text-4xl font-bold tracking-tight text-blue-600 sm:text-6xl">
-                    Smart Cow Farming System
+                    {t("Smart Cow Farming System")}
                   </h1>
                   <h2 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl">
-                    Transforming Traditional Farming with{" "}
+                    {t("Transforming Traditional Farming with")}{" "}
                     <span className="text-blue-600">
-                      Smart IoT Technology
+                      {t("Smart IoT Technology")}
                     </span>
                   </h2>
                   <h2 className="mt-6 text-xl leading-8 text-gray-600">
-                    Monitor cow health, automate feeding, and ensure farm safety — all from your phone!
+                    {t('home_description')}
                   </h2>
                 </div>
                 {/* Button section click to scroll to demo video */}
@@ -50,7 +53,7 @@ const Home = () => {
                     className=" cursor-pointer isomorphic-link isomorphic-link--internal inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                     onClick={scrollToPage}
                   >
-                    See More
+                    {t('SeeMore')}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-4 w-4"

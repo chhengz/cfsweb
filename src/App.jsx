@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import "./i18n";
 
 // Page
 import { Home, Contact, Team, Error404 } from "./pages"
