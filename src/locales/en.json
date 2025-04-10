@@ -34,6 +34,16 @@
     "Promotes sustainable farming": "Promotes sustainable farming",
     "Key Technologies": "Key Technologies",
 
+    "_Comment Process": "Process",
+    "HowItWorks": "How It Works",
+    "DataCollection": "Data Collection",
+    "DataTransmission": "Data Transmission",
+    "CloudIntegration": "Cloud Integration",
+    "UserInterface": "User Interface",
+    "Automation": "Automation",
+
+    "_Comment Features": "Features",
+
     "_Comment Team": "Team",
     "Meet Our Team": "Meet Our Team",
     "TeamDescription": "Meet the talented individuals behind Smart Cow Farming System. Our diverse team brings together expertise in agriculture, technology, and design to create a comprehensive solution for modern farmers.",

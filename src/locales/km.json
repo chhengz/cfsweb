@@ -13,9 +13,9 @@
     "SeeMore": "មើលច្រើនទៀត",
     
     "_Comment Demo": "Demo",
-    "demo_title": "Smart IoT Monitoring System",
-    "demo_description": "This project demonstrates a real-time IoT solution that monitors environmental data using sensors and displays analytics through a connected dashboard.",
-    "demo_technologies": "Built with ❤️ using ESP32, Node.js, and Firebase.",
+    "demo_title": "ប្រព័ន្ធត្រួតពិនិត្យ IoT ឆ្លាតវៃ",
+    "demo_description": "គម្រោងនេះបង្ហាញពីដំណោះស្រាយ IoT ក្នុងពេលជាក់ស្តែង ដែលត្រួតពិនិត្យទិន្នន័យបរិស្ថានដោយប្រើឧបករណ៍ចាប់សញ្ញា និងបង្ហាញការវិភាគតាមរយៈផ្ទាំងគ្រប់គ្រងដែលបានតភ្ជាប់។",
+    "demo_technologies": "បង្កើតឡើងដោយ ❤️ ដោយប្រើ ESP32, Node.js និង Firebase",
     
     "_Comment University": "University",
     "uniersity_name_km": "សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ",

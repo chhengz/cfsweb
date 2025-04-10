@@ -11,7 +11,7 @@ const Features = ({ data, loading }) => {
       ) : (
         <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
           <div className="relative inline-block">
-            <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-red-400 to-orange-500 leading-none text-center sm:text-5xl">
+            <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-red-400 to-orange-500 leading-relaxed text-center sm:text-5xl">
               {t(data?.FEATURE_CONTENT?.title)}
             </h1>
           </div>
