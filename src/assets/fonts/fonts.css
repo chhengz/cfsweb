@@ -1,0 +1,27 @@
+/* fonts.css */
+@font-face {
+    font-family: "Khmer OS Battambang";
+    src: local("Khmer OS Battambang"),
+         url("KhmerOSbattambang.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Koh Santepheap";
+    src: local("Koh Santepheap"),
+         url("https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+         url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }

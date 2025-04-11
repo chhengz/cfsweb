@@ -1,0 +1,59 @@
+
+
+/* Custom toast animation */
+.toast-animation {
+  animation-duration: 0.3s;
+}
+
+/* Custom toast styles */
+.hot-toast {
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.offline-notification {
+    position: fixed;
+    bottom: 0;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    background-color: #ef4444;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    z-index: 50;
+    animation: bounce 2s infinite;
+  }
+  
+  .offline-notification .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .offline-notification button {
+    margin-left: 1rem;
+    padding: 0.25rem 0.75rem;
+    background-color: white;
+    color: #ef4444;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+  }
+  
+  .offline-notification button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }

@@ -2,13 +2,10 @@ import React from "react";
 import Loading from "../components/customs/loading/Loading";
 import { useTranslation } from "react-i18next";
 
-const Features = ({ data, loading }) => {
+const Features = ({ data }) => {
   const { t } = useTranslation();
   return (
     <section className="py-6">
-      {loading ? (
-        <Loading />
-      ) : (
         <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
           <div className="relative inline-block">
             <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-red-400 to-orange-500 leading-relaxed text-center sm:text-5xl">
@@ -26,7 +23,6 @@ const Features = ({ data, loading }) => {
             ))}
           </ul>
         </div>
-      )}
     </section>
   );
 };

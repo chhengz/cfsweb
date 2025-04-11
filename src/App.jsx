@@ -8,6 +8,11 @@ import { Home, Contact, Team, Error404 } from "./pages"
 import RootLayout from "./components/layout/RootLayout"
 import AboutLayout from "./components/layout/AboutLayout"
 
+// Network and Notification
+import { OfflineNotification } from "./components/customs/alert/OfflineNotification";
+import { NetworkProvider } from "./components/context/NetworkContext";
+import { OfflineToastNotification } from "./components/customs/alert/OfflineToastNotification";
+
 
 function App() {
   const routers = createBrowserRouter([
@@ -46,7 +51,12 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={routers} />
+      {/* <RouterProvider router={routers} /> */}
+      <NetworkProvider>
+        <RouterProvider router={routers} />
+        {/* <OfflineNotification /> */}
+        <OfflineToastNotification />
+      </NetworkProvider>
     </>
   )
 }

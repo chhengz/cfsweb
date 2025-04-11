@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Loading from "../components/customs/loading/Loading";
 
-const About = ({data, loading}) => {
+const About = ({data}) => {
   const { t } = useTranslation();
   return (
     <>
@@ -10,9 +10,6 @@ const About = ({data, loading}) => {
       <div className="">
         <div className="w-full pt-15 flex flex-col justify-center ">
           <section className="py-6">
-            {loading ? (
-              <Loading />
-            ) : (
               <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
                 {/**
                  *  not ready for this color from-blue-400 to-indigo-500
@@ -25,7 +22,6 @@ const About = ({data, loading}) => {
                   {t(data?.ABOUT_CONTENT?.description)}
                 </p>
               </div>
-            )}
           </section>
         </div>
 

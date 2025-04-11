@@ -1,6 +1,6 @@
 
 import { createContext, useContext } from 'react';
-import { useNetworkStatus } from '../context/NetworkContext';
+import { useNetworkStatus } from '../../hooks/useNetworkStatus';
 
 const NetworkContext = createContext();
 
