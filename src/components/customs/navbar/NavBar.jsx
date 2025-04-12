@@ -102,11 +102,11 @@ const NavBar = () => {
                 ${open ? "top-18" : "-top-68"}`}
             >
               {links.map((link, i) => (
-                <li key={i} className="md:ml-8 text-xl md:my-0 my-8 bg-white">
+                <li key={i} className="flex items-center md:ml-8 text-xl md:my-0 my-8 bg-white">
                   <NavLink
                     onClick={() => setOpen(false)}
                     to={link.path}
-                    className="block w-fit font-bold text-gray-600 hover:text-gray-400 hover:underline duration-500"
+                    className="block w-fit font-bold text-gray-600 hover:text-gray-400 duration-500 active:text-blue-500"
                   >
                     {t(link.label)}
                   </NavLink>
