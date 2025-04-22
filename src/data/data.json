@@ -4,7 +4,7 @@
     "description": "This project focuses on building a smart cow farming system using IoT technologies like GPS-enabled collars, environmental sensors, automated feeding systems, and a mobile app for real-time monitoring.",
     "list": [
       {
-        "kayword": "importance",
+        "keyword": "importance",
         "title": "Why It Matters",
         "text": [
           "Increases productivity",
@@ -14,7 +14,7 @@
         ]
       },
       {
-        "kayword": "technologies",
+        "keyword": "technologies",
         "title": "Key Technologies",
         "text": [
           "ESP32/ESP8266",

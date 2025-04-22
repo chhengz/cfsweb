@@ -2,8 +2,8 @@ import React from "react";
 import useFetchData from "../../hooks/useFetchData";
 import ScrollToTopButton from "../customs/scroll/ScrollToTopButton";
 import { About, Feature, Process } from "../../pages";
-import '../../i18n';
 import Loading from "../customs/loading/Loading";
+import '../../i18n';
 
 const AboutLayout = () => {
   const { data, loading } = useFetchData();

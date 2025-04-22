@@ -6,14 +6,13 @@ const About = ({data}) => {
   return (
     <>
       {/* About Section */}
-
       <div className="">
         <div className="w-full pt-15 flex flex-col justify-center ">
           <section className="py-6">
               <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
                 {/**
                  *  not ready for this color from-blue-400 to-indigo-500
-                 *  
+                 *
                  * */}
                 <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500 leading-relaxed text-center sm:text-5xl">
                   {t(data?.ABOUT_CONTENT?.title)}
