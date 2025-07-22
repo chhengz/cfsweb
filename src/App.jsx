@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "./i18n";
 
 // Page
-import { Home, Contact, Team, Error404 } from "./pages"
+import { Home, Contact, Team, Error404, Dashboard } from "./pages"
 
 // Layout
 import RootLayout from "./components/layout/RootLayout"
@@ -21,31 +21,17 @@ function App() {
       errorElement: <Error404 />,
       element: <RootLayout />,
       children: [
-        {
-          index: true,
-          element: <Home />
-        },
-        {
-          path: '/home',
-          element: <Home />
-        },
-        {
-          path: 'about',
-          element: <AboutLayout />
-        },
-        {
-          path: 'feature',
-          element: <div>Feature</div>
-        },
-        {
-          path: 'team',
-          element: <Team />
-        },
-        {
-          path: 'contact',
-          element: <Contact />
-        },
+        { index: true, element: <Home /> },
+        { path: 'home', element: <Home /> },
+        { path: 'about', element: <AboutLayout /> },
+        { path: 'feature', element: <div>Feature</div> },
+        { path: 'team', element: <Team /> },
+        { path: 'contact', element: <Contact /> },
       ]
+    },
+    {
+      path: '/dashboard',
+      element: <Dashboard />
     }
   ])
 

@@ -9,12 +9,14 @@ import ScrollToTopButton from "../components/customs/scroll/ScrollToTopButton";
 import Demo from "./Demo";
 import University from "./University";
 import { useTranslation } from "react-i18next";
+import Button from "../components/customs/button/Button";
 
 // Define image by URL
 const COW_IMAGE_URL = "https://thumbs.dreamstime.com/b/high-tech-cow-farm-managed-artificial-intelligence-dashboard-phrase-ai-cows-high-tech-cow-farm-managed-301843265.jpg";
 
 
 const Home = () => {
+  
   const { t } = useTranslation();
   const demoRef = useRef(null);
   const scrollToPage = () => {
@@ -22,15 +24,20 @@ const Home = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <>
       {/* ScrollToTop Button */}
       <ScrollToTopButton />
       <div>
+
+
         {/* Home page */}
         <section className="relative overflow-hidden  sm:pb-16 sm:pt-14  xl:pt-30">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="pt-28 sm:pt-30 mx-auto max-w-2xl text-center ">
+
+
               {/* setLoading for showing up page ontent */}
               <div>
                 <div>
@@ -47,12 +54,11 @@ const Home = () => {
                     {t('home_description')}
                   </h2>
                 </div>
+
+
                 {/* Button section click to scroll to demo video */}
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <button
-                    className=" cursor-pointer isomorphic-link isomorphic-link--internal inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                    onClick={scrollToPage}
-                  >
+                  <Button onClick={scrollToPage}>
                     {t('SeeMore')}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -66,10 +72,12 @@ const Home = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
+
+
             {/* Image section */}
             <div className="relative mx-auto mt-10 max-w-xl">
               <img
@@ -80,6 +88,8 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+
         {/* Demo video section */}
         <section
           ref={demoRef}
@@ -87,6 +97,8 @@ const Home = () => {
         >
           <Demo />
         </section>
+
+
         {/* University section */}
         <section className="mt-12 lg:mt-6 pb-12 sm:pb-16  lg:pb-24 xl:pb-28">
           <University />
