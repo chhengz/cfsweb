@@ -5,6 +5,7 @@ import useFetchData from "../hooks/useFetchData";
 
 // sample IMAGE_URL
 const IMG_URL = "https://tse4.mm.bing.net/th/id/OIP.zi4Xf-NhgVgITYi_UTApDAHaHa?rs=1&pid=ImgDetMain";
+const LEADER_IMG_URL = "https://cdn.pfps.gg/pfps/1716-sigma.png";
 
 const Team = () => {
   const { t } = useTranslation();
@@ -13,6 +14,7 @@ const Team = () => {
   return (
     <section className="relative overflow-hidden pb-12 sm:pb-16 sm:pt-14 lg:pb-24 xl:pb-28 xl:pt-30">
       <div className="w-full pt-15 flex flex-col justify-center items-center">
+        
         {/* Team Section */}
         {loading ? (
           <Loading />
@@ -26,29 +28,33 @@ const Team = () => {
                 {t('TeamDescription')}
               </p>
               {/* Group Members Section for display profile picture and name */}
-              <div className="flex flex-row flex-wrap-reverse justify-center">
-              {
-                data?.GROUP_MEMBERS?.map((member, index) => (
-                <ListCard
-                  key={index}
-                  img={member.image || IMG_URL}
-                  name={member.name}
-                  role={member.role}
-                />
-                ))}
-
-                {/* {!loading && members.length === 0 ? (
-                <p className="text-lg text-red-500">No members found.</p>
-              ) : (
-                members.map((member, index) => (
+              
+              <div>
+                {/* Show Team Leader(s) */}
+                {data?.GROUP_MEMBERS?.filter(
+                  (member) => member.role === "Team Leader"
+                ).map((member, index) => (
                   <ListCard
-                    key={index}
+                    key={`leader-${index}`}
+                    img={member.image || LEADER_IMG_URL}
+                    name={member.name}
+                    role={member.role}
+                  />
+                ))}
+              </div>
+              
+              <div className="flex flex-row flex-wrap justify-center">
+                {/* Show Members */}
+                {data?.GROUP_MEMBERS?.filter(
+                  (member) => member.role === "Member"
+                ).map((member, index) => (
+                  <ListCard
+                    key={`member-${index}`}
                     img={member.image || IMG_URL}
                     name={member.name}
                     role={member.role}
                   />
-                ))
-              )} */}
+                ))}
 
               </div>
             </div>
