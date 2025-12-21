@@ -7,6 +7,7 @@ import NavBar from "../navbar/NavBar";
 
 import KH_IMG from '../../../assets/lang/kh.png'
 import EN_IMG from '../../../assets/lang/en.png'
+import ICON_IMG from '../../../assets/icon.png'
 
 const Header = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0); // Previous scroll position
@@ -63,7 +64,8 @@ const Header = () => {
           >
             <div className="font-bold text-3xl flex items-center text-gray-600 hover:text-blue-600">
               <span className="text-3xl  mr-1">
-                <IoTerminal />
+                {/* <IoTerminal /> */}
+                <img src={ICON_IMG} alt="icon" className="w-10 h-10 object-cover"/>
               </span>
             </div>
           </Link>

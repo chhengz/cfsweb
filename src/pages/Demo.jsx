@@ -13,15 +13,15 @@ const Demo = () => {
         <p className="text-gray-700 mb-6">
           {t('demo_description')}
         </p>
-        <div className="aspect-w-16 aspect-h-9 w-full mb-6">
+        <div className="w-full h-48 md:h-64 mb-4">
           <iframe
-            className="w-full h-full rounded-xl"
+            className="w-full h-full rounded-xl object-center border border-gray-600/80 shadow-lg"
             src={`https://www.youtube.com/embed/${VIDEO_ID_URL}`}
             title={VIDEO_TITLE}
             allowFullScreen
           ></iframe>
         </div>
-        <p className="text-gray-500 text-sm">{t('demo_technologies')}</p>
+        {/* <p className="text-gray-500 text-sm">{t('demo_technologies')}</p> */}
       </div>
     </div>
   )

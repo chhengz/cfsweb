@@ -5,7 +5,7 @@ const StatusAlert = ({ status }) => {
 
   return (
     <div className="my-4">
-      <Alert severity={status.severity} className="rounded-lg text-sm">
+      <Alert severity={status.severity} className="rounded-lg text-md">
         {status.message}
       </Alert>
     </div>

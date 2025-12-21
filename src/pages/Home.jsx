@@ -55,7 +55,6 @@ const Home = () => {
                   </h2>
                 </div>
 
-
                 {/* Button section click to scroll to demo video */}
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Button onClick={scrollToPage}>
@@ -74,6 +73,7 @@ const Home = () => {
                     </svg>
                   </Button>
                 </div>
+
               </div>
             </div>
 
@@ -81,7 +81,7 @@ const Home = () => {
             {/* Image section */}
             <div className="relative mx-auto mt-10 max-w-xl">
               <img
-                className="w-full shadow rounded-2xl border border-gray-100"
+                className="w-full shadow-lg rounded-2xl border border-gray-100"
                 src={COW_IMAGE_URL}
                 alt="Home banner"
               />

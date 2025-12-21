@@ -55,7 +55,6 @@ const Team = () => {
                     role={member.role}
                   />
                 ))}
-
               </div>
             </div>
           </section>

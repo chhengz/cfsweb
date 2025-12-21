@@ -7,6 +7,7 @@ import '../../../i18n'
 // flags
 import KH_IMG from '../../../assets/lang/kh.png'
 import EN_IMG from '../../../assets/lang/en.png'
+import ICON_IMG from '../../../assets/icon.png'
 // import LanguageSelector from '../button/LanguageSelector';
 
 // links
@@ -89,13 +90,15 @@ const NavBar = () => {
       className={`fixed items-center justify-between left-0 w-full z-50 transition-all duration-300 
         ${visible ? `top-0` : `-top-18`}`}
     >
-      <div className="flex md:flex items-center justify-between md:px-10  shadow-md bg-white px-6 py-4">
+      <div className="flex md:flex items-center justify-between md:px-10 shadow-md bg-white px-6 py-4">
         <Link
           to={"/"}
           className="block w-fit transition duration-500 ease-in-out "
         >
-          <div className="font-bold text-3xl flex items-center text-gray-600 hover:text-gray-400">
-            <IoTerminal />
+          <div className="font-bold flex items-start text-gray-600 hover:text-gray-400">
+            {/* <IoTerminal /> */}
+            <img src={ICON_IMG} alt="icon" className="w-auto h-10 object-cover"/>
+            
           </div>
         </Link>
 
@@ -119,7 +122,7 @@ const NavBar = () => {
                 <NavLink
                   onClick={() => setOpen(false)}
                   to={link.path}
-                  className="block w-full font-bold text-gray-600 hover:text-gray-400 duration-500 active:text-blue-500"
+                  className="block w-full font-bold text-gray-600 hover:text-gray-400 duration-500 active:text-blue-500 "
                 >
                   {t(link.label)}
                 </NavLink>

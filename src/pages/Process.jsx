@@ -5,9 +5,13 @@ import { useTranslation } from "react-i18next";
 
 const Process = ({ data }) => {
   const { t } = useTranslation();
+
+  const [collapse, setCollapse] = React.useState(false);
+
+
   return (
     <div className="">
-      <section className="py-6 max-w-xl mx-auto">
+      <section className="py-6 w-full md:w-3/4 lg:w-1/2 mx-auto">
           <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
             <div className="relative inline-block">
               <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-red-400 to-orange-500 leading-relaxed text-center sm:text-5xl">
@@ -16,11 +20,11 @@ const Process = ({ data }) => {
             </div>
             <ul className="flex flex-col text-2xl font-medium text-start text-gray-500 dark:text-gray-500 px-6 py-4 list-none">
               {data?.PROCESS_CONTENT?.steps.map((step, index) => (
-                <div key={index} className="flex">
+                <div key={index} className="flex ">
                   <div className="mr-4 flex flex-col items-center">
-                    <div>
+                    <div className="">
                       <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-900">
-                        <FaAngleDown className="h-6 w-6 text-blue-800" />
+                        <FaAngleDown className="h-6 w-6 text-blue-800 " />
                       </div>
                     </div>
                     {/* no display the line at the last index */}

@@ -1,40 +1,100 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+
+import ICON_IMG from "../../../assets/icon_white.png";
+import { Facebook, Github, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer>
-        
-        {/* <!-- footer --> */}
-        <div class="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
-          <a class="text-indigo-400">example@email.com</a>
-          <p class="my-5 leading-normal">49 Smith St. <br />Saint Cloud, MN 56301</p>
-          <span class="inline-flex">
-            <a class="text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a class="ml-4 text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a class="ml-4 text-gray-500">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a class="ml-4 text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
-                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-              </svg>
-            </a>
-          </span>
+      {/* <!-- footer --> */}
+      <div className="mt-8 w-full bg-gray-800 px-8 py-8 text-center md:text-start">
+        <div className="w-full  grid grid-cols-1 md:grid-cols-2 flex-col md:flex-row ">
+          <div className="p-6 ">
+            {/* <h2 className='text-xl md:text-2xl font-bold text-white'>CFS Web.</h2> */}
+
+            <div className="w-1/2 md:w-2/3 lg:w-2/4 mx-auto md:mx-0">
+              <img src={ICON_IMG} alt="icon" className="w-full" />
+            </div>
+
+            <ul className="w-full mt-4 md:mt-6 flex space-x-2 justify-center md:justify-start">
+              <li className="bg-gray-200/60 hover:bg-gray-100/80 rounded-xl p-1 w-fit"><Github /></li>
+              <li className="bg-gray-200/60 hover:bg-gray-100/80 rounded-xl p-1 w-fit"><Facebook /></li>
+              <li className="bg-gray-200/60 hover:bg-gray-100/80 rounded-xl p-1 w-fit"><Youtube /></li>
+            </ul>
+          </div>
+          <div className="p-6 grid gap-2 grid-cols-1 md:grid-cols-2 flex-row md:flex-col justify-between ">
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold text-white">
+                Organization
+              </h2>
+
+              <ul className="mt-2">
+                <li>
+                  <a
+                    href="https://www.rupp.edu.kh/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    Royal University of Phnom Penh
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://csd-website-xi.vercel.app/home"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    Department of Computer Science
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-6 md:mt-0">
+              <h2 className="text-xl md:text-2xl font-bold text-white">
+                Information Links
+              </h2>
+              <ul className="mt-2">
+                <li>
+                  <Link
+                    to={"/about"}
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"/process"}
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    How It Works
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"/contact"}
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
+        <div className="mt-6 text-center py-2">
+          <p className=" text-md text-gray-500 dark:text-gray-400">
+            © 2024 CFS Web. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
