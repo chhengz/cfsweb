@@ -1,5 +1,13 @@
-# Smart Farming system (Web Dashboard)
+# Smart Farming system IoT (Web Dashboard)
 
+# ✨ Features
 
+# 📸 Screenshot
 
-# Features
+- Homepage
+![homepage](images/screenshots/homepage.png)
+- Dashboard
+![dashboard](images/screenshots/dashboard.png)
+
+# 👨‍💻 Developer
+Develop by @chheng_hilo
